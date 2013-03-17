@@ -50,7 +50,7 @@ def test_packages():
             if not line.startswith("#")
         ]
 
-setup(name='httpretty',
+setup(name='spulec-httpretty',
     version=version,
     description='HTTP client mock for Python',
     author=u'Gabriel Falcao',
