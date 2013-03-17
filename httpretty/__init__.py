@@ -336,7 +336,6 @@ class fakesock(object):
             for matcher, value in HTTPretty._entries.items():
                 if matcher.matches(info):
                     entries = value
-                    info = matcher.info
                     break
 
             if not entries:
