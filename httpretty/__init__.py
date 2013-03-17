@@ -293,9 +293,6 @@ class fakesock(object):
             except ValueError:
                 is_parsing_headers = False
 
-                if self._host not in hostnames:
-                    return self._true_sendall(data)
-
             if not is_parsing_headers:
                 if len(self._sent_data) > 1:
                     headers, body = map(utf8, self._sent_data[-2:])
